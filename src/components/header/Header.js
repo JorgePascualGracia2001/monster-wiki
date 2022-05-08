@@ -1,5 +1,6 @@
 import "./Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -12,22 +13,22 @@ function Header() {
         <FontAwesomeIcon icon="book" />
       </div>
       <div id="navbar" className="d-flex flex-justify-between">
-        <a href="/#">
+        <Link to="/home">
           <FontAwesomeIcon icon="house" />
           Inicio
-        </a>
-        <a href="/#">
+        </Link>
+        <Link to="/search">
           <FontAwesomeIcon icon="search" />
           Busqueda
-        </a>
-        <a href="/#">
+        </Link>
+        <Link to="/edit">
           <FontAwesomeIcon icon="pencil" />
           Editar
-        </a>
-        <a href="/#">
+        </Link>
+        <Link to="/login">
           <FontAwesomeIcon icon="user" />
           Login
-        </a>
+        </Link>
       </div>
     </div>
   );

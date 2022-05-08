@@ -1,0 +1,43 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+// Colors
+$colors: (
+  primary-green: #abff4f,
+  secondary-green: #3a5743,
+  primary-pink: #e5446d,
+  primary-gray: #cacfd6,
+  primary-white: #fff,
+  font-color: #170a1c,
+);
+
+@function get-color($input-color) {
+  @each $name, $color in $colors {
+    @if $input-color == $name {
+      @return $color;
+    }
+  }
+}
+
+// Display
+$displays: (
+    flex: flex,
+    inline: inline,
+    block: block,
+    none: none
+);
+
+$flex-justify: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly,
+);
+
+$flex-align: (
+    start: flex-start,
+    end: flex-end,
+    center: center
+);

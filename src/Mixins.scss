@@ -1,0 +1,50 @@
+@use "Variables";
+
+@mixin background-colors {
+  @each $name, $color in Variables.$colors {
+    .background-#{$name} {
+      background: $color;
+    }
+  }
+}
+
+@include background-colors;
+
+@mixin font-colors {
+  @each $name, $color in Variables.$colors {
+    .color-#{$name} {
+      color: $color;
+    }
+  }
+}
+
+@include font-colors;
+
+@mixin display {
+  @each $name, $display in Variables.$displays {
+    .d-#{$name} {
+      display: $display;
+    }
+  }
+}
+
+@include display;
+
+@mixin justify {
+  @each $name, $justify in Variables.$flex-justify {
+    .flex-justify-#{$name} {
+      justify-content: $justify;
+    }
+  }
+}
+@include justify;
+
+@mixin align {
+  @each $name, $align in Variables.$flex-align {
+    .flex-align-#{$name} {
+      align-items: $align;
+    }
+  }
+}
+
+@include align;

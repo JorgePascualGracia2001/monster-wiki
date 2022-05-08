@@ -1,0 +1,25 @@
+@use "Variables";
+@use "Mixins";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+      text-decoration: underline;
+  }
+}
+
+body {
+  margin: 0px;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  color: Variables.get-color("font-color");
+  background-color: Variables.get-color("primary-green");
+  height: 100vh;
+}

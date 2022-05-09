@@ -1,0 +1,14 @@
+.card-main {
+	flex-flow: column;
+  .card-section {
+    &.input-container {
+			margin-bottom: 16px;
+      input {
+        width: 100%;
+      }
+    }
+		&.article-container{
+			height: 100%;
+		}
+  }
+}

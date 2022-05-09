@@ -1,12 +1,15 @@
+@use "/src/Variables";
+
 .card{
     border-radius: 10px;
     padding: 16px;
+    &.card-main{
+        margin: 36px 15%;
+        height: 60vh;
+        background-color: Variables.get-color("primary-gray-dark");
+    }
+    &.card-section{
+        width: 100%;
+        background-color: Variables.get-color("primary-gray");
+    }
 }
-
-.card-main{
-    margin: 36px 15%;
-    height: 60vh;
-    background-color: #cacfd6;
-}
-
-.card-section{}

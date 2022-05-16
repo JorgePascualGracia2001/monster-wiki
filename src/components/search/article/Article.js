@@ -1,7 +1,6 @@
 import "./Article.scss";
 
 function Article(props) {
-	console.log(props.fetchedMonster)
 		if (props.fetchedMonster.name){
 			return(
 				<div>

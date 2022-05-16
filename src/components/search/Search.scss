@@ -1,11 +1,36 @@
+@use "/src/Variables";
+
 .card-main {
 	flex-flow: column;
   .card-section {
     &.input-container {
 			margin-bottom: 16px;
       input {
-        width: 100%;
-      }
+        width: 96%;
+				background-color: Variables.get-color("primary-white");
+				padding: 12px 2%;
+				border-radius: 10px;
+				border: solid 2px Variables.get-color("primary-gray-dark");
+      };
+			.suggestions{
+				position: absolute;
+				max-height: 30vh;
+				overflow: hidden;
+				background-color: Variables.get-color("primary-white");
+				border-radius: 10px;
+				border: solid 2px Variables.get-color("primary-gray-dark");
+				padding: 6px;
+				:not(:last-child){
+					border-bottom: solid 1px Variables.get-color("primary-gray-dark");
+				}
+				div{
+					cursor: pointer;
+					padding: 6px;
+					&:hover{
+						background-color: Variables.get-color("primary-gray");
+					}
+				}
+			};
     }
 		&.article-container{
 			height: 100%;

@@ -9,6 +9,9 @@ function App() {
         <Header/>
       </div>
       <Outlet />
+      <div>
+        <Header/>
+      </div>
     </div>
   );
 }

@@ -15,7 +15,7 @@
 			.suggestions{
 				position: absolute;
 				max-height: 30vh;
-				overflow: hidden;
+				overflow: auto;
 				background-color: Variables.get-color("primary-white");
 				border-radius: 10px;
 				border: solid 2px Variables.get-color("primary-gray-dark");
@@ -34,6 +34,7 @@
     }
 		&.article-container{
 			height: 100%;
+			overflow: auto;
 		}
   }
 }

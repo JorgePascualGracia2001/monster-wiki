@@ -66,7 +66,7 @@ function Search() {
           ></input>
           <div className="suggestions">
             {suggestions.map(({ index, name }) => (
-              <div onClick={fetchSuggestion} key={index}>
+              <div role="link" onClick={fetchSuggestion} key={index}>
                 {name}
               </div>
             ))}

@@ -13,7 +13,7 @@ body {
   font-family: "Ubuntu", sans-serif;
   color: Variables.get-color("font-color");
   background-color: Variables.get-color("primary-green");
-  height: 100vh;
+  min-height: 90vh;
   a{
     text-decoration: none;
     color: inherit;
@@ -25,4 +25,12 @@ body {
 
 input {
   all: unset;
+}
+
+#main-content{
+  margin-top: 10vh;
+  min-height: 90vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }

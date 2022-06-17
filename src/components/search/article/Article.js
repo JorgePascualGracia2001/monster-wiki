@@ -40,11 +40,8 @@ function Article(props) {
 					<Speed content={data.speed}></Speed>
 					{/*<div>Reactions: {data.reactions}!</div>
 					<div>Special abilities: {data.special_abilities}!</div>
-					<div>Speed: {data.speed}!</div>
 					<div>Actions: {data.actions}!</div>
-					<div>Legendary actions: {data.legendary_actions}!</div>
-					<div>Damage resistances: {data.damage_resistances}!</div>
-					<div>Damage vulnerabilities: {data.damage_vulnerabilities}!</div> */}
+					<div>Legendary actions: {data.legendary_actions}!</div>*/}
 				</div>
 			)
 		};

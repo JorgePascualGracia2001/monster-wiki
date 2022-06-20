@@ -2,7 +2,6 @@ import "./Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { useState, useRef } from "react";
-import Card from "../common/Card";
 import { users } from "../../models/user/demoUsers";
 
 function Header() {
@@ -100,9 +99,9 @@ function Header() {
               <FontAwesomeIcon icon="search" />
               Busqueda
             </Link>
-            <Link to="/contact">
+            <Link to="/incidence">
               <FontAwesomeIcon icon="pencil" />
-              Contactanos
+              Incidencias
             </Link>
             <div className="login-wrapper clickable" onClick={activarLogout}>
               <FontAwesomeIcon icon="user" />

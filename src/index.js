@@ -14,6 +14,7 @@ import App from "./App";
 import Home from "./components/home/Home";
 import Search from "./components/search/Search";
 import Contact from "./components/contact/Contact";
+import Incidence from "./components/incidence/Incidence";
 
 library.add(faBook, faHouse, faMagnifyingGlass, faUser, faPencil);
 
@@ -26,6 +27,7 @@ root.render(
         <Route path="home" element={<Home />} />
         <Route path="search" element={<Search />} />
 				<Route path="contact" element={<Contact />} />
+				<Route path="incidence" element={<Incidence />} />
       </Route>
     </Routes>
   </BrowserRouter>

@@ -1,0 +1,22 @@
+@use "/src/Variables";
+
+.form-component{
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+
+textarea{
+    min-height: 20vh;
+}
+
+.contact-form{
+    button{
+        border-color: Variables.get-color("primary-gray-dark");
+        background-color: Variables.get-color("primary-gray-dark");
+        color: Variables.get-color("primary-gray");
+    }
+}
+
+.thanks-message{
+    text-align: center;
+}

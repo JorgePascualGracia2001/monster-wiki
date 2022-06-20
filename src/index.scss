@@ -23,14 +23,13 @@ body {
   }
 }
 
-input {
+input,
+button {
   all: unset;
 }
 
 #main-content{
   margin-top: 10vh;
   min-height: 90vh;
-  display: flex;
   flex-flow: column;
-  justify-content: space-between;
 }

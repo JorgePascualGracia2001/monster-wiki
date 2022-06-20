@@ -9,7 +9,7 @@ function App() {
       <div>
         <Header />
       </div>
-      <div id="main-content">
+      <div id="main-content" className="d-flex flex-justify-between">
         <Outlet />
         <div>
           <Footer />

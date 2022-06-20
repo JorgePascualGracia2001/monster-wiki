@@ -14,7 +14,6 @@ import App from "./App";
 import Home from "./components/home/Home";
 import Search from "./components/search/Search";
 import Edit from "./components/edit/Edit";
-import Login from "./components/login/Login";
 
 library.add(faBook, faHouse, faMagnifyingGlass, faUser, faPencil);
 
@@ -27,7 +26,6 @@ root.render(
         <Route path="home" element={<Home />} />
         <Route path="search" element={<Search />} />
 				<Route path="edit" element={<Edit />} />
-				<Route path="login" element={<Login />} />
       </Route>
     </Routes>
   </BrowserRouter>

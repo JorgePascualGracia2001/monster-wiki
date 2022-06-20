@@ -1,3 +1,5 @@
+@use "/src/Variables";
+
 #header{
     padding: 24px 15%;
     font-weight: bolder;
@@ -6,6 +8,7 @@
     top: 0;
     width: 100%;
     min-height: 10vh;
+    max-height: 10vh;
 }
 
 #page-title{
@@ -21,3 +24,37 @@
     }
 }
 
+
+input {
+    background-color: Variables.get-color("primary-white");
+    padding: 6px;
+    border-radius: 10px;
+    border: solid 2px Variables.get-color("primary-gray-dark");
+    font-size: 16px;
+    color: Variables.get-color("font-color");
+}
+
+
+button {
+    background-color: Variables.get-color("primary-green");
+    padding: 6px;
+    border-radius: 10px;
+    border: solid 2px Variables.get-color("primary-green");
+    color: Variables.get-color("secondary-green");
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.clickable{
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.input-wrapper,
+.button-wrapper{
+    gap: 10px;
+}

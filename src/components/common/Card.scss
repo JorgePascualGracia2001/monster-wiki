@@ -11,4 +11,8 @@
         width: 100%;
         background-color: Variables.get-color("primary-gray");
     }
+    &.card-sub-section{
+        width: 100%;
+        background-color: Variables.get-color("primary-pink");
+    }
 }

@@ -13,7 +13,7 @@ import "./index.scss";
 import App from "./App";
 import Home from "./components/home/Home";
 import Search from "./components/search/Search";
-import Edit from "./components/edit/Edit";
+import Contact from "./components/contact/Contact";
 
 library.add(faBook, faHouse, faMagnifyingGlass, faUser, faPencil);
 
@@ -25,7 +25,7 @@ root.render(
       <Route element={<App />}>
         <Route path="home" element={<Home />} />
         <Route path="search" element={<Search />} />
-				<Route path="edit" element={<Edit />} />
+				<Route path="contact" element={<Contact />} />
       </Route>
     </Routes>
   </BrowserRouter>

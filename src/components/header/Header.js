@@ -100,9 +100,9 @@ function Header() {
               <FontAwesomeIcon icon="search" />
               Busqueda
             </Link>
-            <Link to="/edit">
+            <Link to="/contact">
               <FontAwesomeIcon icon="pencil" />
-              Editar
+              Contactanos
             </Link>
             <div className="login-wrapper clickable" onClick={activarLogout}>
               <FontAwesomeIcon icon="user" />
@@ -130,9 +130,9 @@ function Header() {
               <FontAwesomeIcon icon="search" />
               Busqueda
             </Link>
-            <Link to="/edit">
+            <Link to="/contact">
               <FontAwesomeIcon icon="pencil" />
-              Editar
+              Contactanos
             </Link>
             <div className="login-wrapper clickable" onClick={activarLogout}>
               <FontAwesomeIcon icon="user" />
@@ -163,7 +163,7 @@ function Header() {
         </Link>
         <div className="clickable" onClick={mustLogin}>
           <FontAwesomeIcon icon="pencil" />
-          Editar
+          Contactanos
         </div>
         <div className="clickable" onClick={activarLogin}>
           <FontAwesomeIcon icon="user" />

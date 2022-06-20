@@ -27,7 +27,7 @@ function Incidence() {
               <div>{incidences[incidenceIndex].description}</div>
             </div>
             <div className="d-flex flex-justify-around button-wrapper">
-              <button onClick={goNext}>siguiente</button>
+              <button role="button" onClick={goNext}>siguiente</button>
             </div>
         </Card>
       </Card>
@@ -45,7 +45,7 @@ function Incidence() {
               <div>{incidences[incidenceIndex].description}</div>
             </div>
             <div className="d-flex flex-justify-around button-wrapper">
-              <button onClick={goPrevious}>Anterior</button>
+              <button role="button"  onClick={goPrevious}>Anterior</button>
             </div>
         </Card>
       </Card>
@@ -63,8 +63,8 @@ function Incidence() {
             <div>{incidences[incidenceIndex].description}</div>
           </div>
           <div className="d-flex flex-justify-around button-wrapper">
-            <button onClick={goPrevious}>Anterior</button>
-            <button onClick={goNext}>siguiente</button>
+            <button role="button"  onClick={goPrevious}>Anterior</button>
+            <button role="button"  onClick={goNext}>siguiente</button>
           </div>
       </Card>
     </Card>

@@ -63,6 +63,7 @@ function Search() {
             placeholder="Buscar"
             onChange={startFetch}
             ref={searchBar}
+            role="input"
           ></input>
           <div className="suggestions">
             {suggestions.map(({ index, name }) => (
@@ -81,7 +82,7 @@ function Search() {
   return (
     <Card className="card-main d-flex">
       <Card className="card-section input-container">
-        <input type="text" placeholder="Buscar" onChange={startFetch}></input>
+        <input role="input" type="text" placeholder="Buscar" onChange={startFetch}></input>
       </Card>
       <Card className="card-section article-container">
         <Article fetchedMonster={monster}></Article>

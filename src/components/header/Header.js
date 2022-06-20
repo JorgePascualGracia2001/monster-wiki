@@ -61,11 +61,13 @@ function Header() {
         >
           <div className="d-flex input-wrapper">
             <input
+            role="input"
               type="text"
               placeholder="usuario"
               onChange={handleUserChange}
             ></input>
             <input
+            role="input"
               type="password"
               placeholder="contraseña"
               onChange={handlePasswordChange}
@@ -73,8 +75,8 @@ function Header() {
             ></input>
           </div>
           <div className="d-flex button-wrapper">
-            <button type="submit">Iniciar sesión</button>
-            <button onClick={activarLogin}>Cancelar</button>
+            <button role="button" type="submit">Iniciar sesión</button>
+            <button role="button" onClick={activarLogin}>Cancelar</button>
           </div>
         </div>
       </form>
@@ -91,19 +93,19 @@ function Header() {
             <FontAwesomeIcon icon="book" />
           </div>
           <div id="navbar" className="d-flex flex-justify-between">
-            <Link to="/home">
+            <Link role="link" to="/home">
               <FontAwesomeIcon icon="house" />
               Inicio
             </Link>
-            <Link to="/search">
+            <Link role="link" to="/search">
               <FontAwesomeIcon icon="search" />
               Busqueda
             </Link>
-            <Link to="/incidence">
+            <Link role="link" to="/incidence">
               <FontAwesomeIcon icon="pencil" />
               Incidencias
             </Link>
-            <div className="login-wrapper clickable" onClick={activarLogout}>
+            <div role="button" className="login-wrapper clickable" onClick={activarLogout}>
               <FontAwesomeIcon icon="user" />
               {usuarioActual.user}
             </div>
@@ -121,19 +123,19 @@ function Header() {
             <FontAwesomeIcon icon="book" />
           </div>
           <div id="navbar" className="d-flex flex-justify-between">
-            <Link to="/home">
+            <Link role="link" to="/home">
               <FontAwesomeIcon icon="house" />
               Inicio
             </Link>
-            <Link to="/search">
+            <Link role="link" to="/search">
               <FontAwesomeIcon icon="search" />
               Busqueda
             </Link>
-            <Link to="/contact">
+            <Link role="link" to="/contact">
               <FontAwesomeIcon icon="pencil" />
               Contactanos
             </Link>
-            <div className="login-wrapper clickable" onClick={activarLogout}>
+            <div role="button" className="login-wrapper clickable" onClick={activarLogout}>
               <FontAwesomeIcon icon="user" />
               {usuarioActual.user}
             </div>
@@ -152,19 +154,19 @@ function Header() {
         <FontAwesomeIcon icon="book" />
       </div>
       <div id="navbar" className="d-flex flex-justify-between">
-        <Link to="/home">
+        <Link role="link" to="/home">
           <FontAwesomeIcon icon="house" />
           Inicio
         </Link>
-        <Link to="/search">
+        <Link role="link" to="/search">
           <FontAwesomeIcon icon="search" />
           Busqueda
         </Link>
-        <div className="clickable" onClick={mustLogin}>
+        <div role="link" className="clickable" onClick={mustLogin}>
           <FontAwesomeIcon icon="pencil" />
           Contactanos
         </div>
-        <div className="clickable" onClick={activarLogin}>
+        <div role="button" className="clickable" onClick={activarLogin}>
           <FontAwesomeIcon icon="user" />
           Login
         </div>

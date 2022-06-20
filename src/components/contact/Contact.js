@@ -9,6 +9,7 @@ function Contact() {
     setContactSent(!contactSent);
     e.preventDefault();
   };
+  
 
   if (contactSent){
     return(
@@ -19,7 +20,7 @@ function Contact() {
               <div>Gracias por ponerte en contacto con nosotros, revisaremos tu incidencia!</div>
             </div>
             <div className="d-flex flex-justify-center button-wrapper">
-              <button type="submit">Enviar otra incidencia</button>
+              <button role="button" type="submit">Enviar otra incidencia</button>
             </div>
           </form>
         </Card>
@@ -39,7 +40,7 @@ function Contact() {
             <textarea></textarea>
           </div>
           <div className="d-flex flex-justify-center button-wrapper">
-            <button type="submit">Enviar</button>
+            <button role="button" type="submit">Enviar</button>
           </div>
         </form>
       </Card>

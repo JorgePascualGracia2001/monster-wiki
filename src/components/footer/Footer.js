@@ -10,7 +10,7 @@ function Footer() {
         <span>Creado por Axel Vicente, Jairo Echegollen y Jorge Pascual</span>
       </div>
       <div id="navbar" className="d-flex flex-justify-between">
-        <a href="https://www.dnd5eapi.co" target="_blank" rel="noreferrer">
+        <a role="link" href="https://www.dnd5eapi.co" target="_blank" rel="noreferrer">
           D&D 5e API
         </a>
       </div>

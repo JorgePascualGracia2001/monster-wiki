@@ -27,7 +27,7 @@ function Incidence() {
               <div>{incidences[incidenceIndex].description}</div>
             </div>
             <div className="d-flex flex-justify-around button-wrapper">
-              <button role="button" onClick={goNext}>siguiente</button>
+              <button role="button" onClick={goNext}>Siguiente</button>
             </div>
         </Card>
       </Card>
@@ -64,7 +64,7 @@ function Incidence() {
           </div>
           <div className="d-flex flex-justify-around button-wrapper">
             <button role="button"  onClick={goPrevious}>Anterior</button>
-            <button role="button"  onClick={goNext}>siguiente</button>
+            <button role="button"  onClick={goNext}>Siguiente</button>
           </div>
       </Card>
     </Card>

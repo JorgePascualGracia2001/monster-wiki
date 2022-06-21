@@ -162,10 +162,10 @@ function Header() {
           <FontAwesomeIcon icon="search" />
           Busqueda
         </Link>
-        <div role="link" className="clickable" onClick={mustLogin}>
+        <a role="link" className="clickable" onClick={mustLogin}>
           <FontAwesomeIcon icon="pencil" />
           Contactanos
-        </div>
+        </a>
         <div role="button" className="clickable" onClick={activarLogin}>
           <FontAwesomeIcon icon="user" />
           Login
